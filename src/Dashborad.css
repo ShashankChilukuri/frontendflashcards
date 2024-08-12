@@ -1,0 +1,118 @@
+.dashboard-container {
+    padding: 20px;
+    background: #f0f4f8; /* Light background color for a clean look */
+    min-height: 100vh;
+    position: relative; /* Allows absolute positioning of the logout button */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    background: #dc3545; /* Danger color button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    position: absolute; /* Position it in the top-right corner */
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.logout-button:hover {
+    background: #c82333; /* Darker shade for hover */
+    transform: scale(1.05);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff; /* Primary color button */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form-container button:hover {
+    background: #0056b3; /* Darker shade for hover */
+    transform: scale(1.05);
+}
+
+.flashcards-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.flashcard-item {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flashcard-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.flashcard-item button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #dc3545; /* Danger color button */
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.flashcard-item button:hover {
+    background: #c82333; /* Darker shade for hover */
+    transform: scale(1.05);
+}
+
+.flashcard-item button.edit {
+    background: #ffc107; /* Warning color button for edit */
+}
+
+.flashcard-item button.edit:hover {
+    background: #e0a800; /* Darker shade for hover */
+}
